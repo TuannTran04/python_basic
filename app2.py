@@ -32,17 +32,17 @@ def print_address(**kwargs):
 
 print_address(name="John", age=30, city="New York")
 
-print(" -----------------------------------------------------------")
+print(" -----------------------------shipping_label------------------------------")
 
 
 def shipping_label(*args, **kwargs):
 
     for arg in args:
-        print(arg, end=" ")
-    print()
+        print(arg, end=" / ")
+    print(">>>")
     for key, value in kwargs.items():
-        print(f"{key}: {value}", end=" ")
-        print()
+        print(f"{key}: {value}", end=" - ")
+        print(" >>")
         print(f"{kwargs.get('city')}")
 
 
